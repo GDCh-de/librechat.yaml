@@ -84,3 +84,6 @@ speech:
           "pFZP5JQG7iQjIQuC4Bku",
           "pqHfZKP75CvOlQylNhV4",
         ]
+
+balance:
+  enabled: false
