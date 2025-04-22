@@ -1,0 +1,86 @@
+version: 1.2.1
+
+cache: true
+
+registration:
+  socialLogins: ["openid"]
+endpoints:
+  custom:
+    - name: "Perplexity"
+      apiKey: "${PERPLEXITY_API_KEY}"
+      baseURL: "https://api.perplexity.ai/"
+      models:
+        default:
+          [
+            "sonar-reasoning-pro",
+            "sonar-reasoning",
+            "sonar-pro",
+            "sonar",
+            "r1-1776",
+          ]
+        fetch: false
+        titleConvo: true
+      titleModel: "sonar"
+      summarize: false
+      summaryModel: "sonar"
+      forcePrompt: false
+      dropParams: ["stop", "frequency_penalty"]
+      modelDisplayLabel: "Perplexity"
+    - name: "Mistral"
+      apiKey: "${MISTRAL_API_KEY}"
+      baseURL: "https://api.mistral.ai/v1"
+      models:
+        default:
+          [
+            "mistral-small-latest",
+            "mistral-large-latest",
+            "codestral-latest",
+            "ministral-8b-latest",
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "mistral-small-latest"
+      modelDisplayLabel: "Mistral"
+      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
+  agents:
+    recursionLimit: 25
+    disableBuilder: false
+    allowedDomains:
+      - "api.gdch.de"
+
+speech:
+  stt:
+    openai:
+      apiKey: "${OPENAI_STT_API_KEY}"
+      model: "whisper-1"
+  tts:
+    #    openai:
+    #      apiKey: "${OPENAI_TTS_API_KEY}"
+    #      model: "tts-1"
+    #      voices: ["alloy", "echo", "fable", "onyx", "nova", "shimmer"]
+    elevenlabs:
+      apiKey: "${ELEVENLABS_TTS_API_KEY}"
+      model: "eleven_multilingual_v2"
+      voices:
+        [
+          "9BWtsMINqrJLrRacOk9x",
+          "CwhRBWXzGAHq8TQ4Fs17",
+          "EXAVITQu4vr4xnSDxMaL",
+          "FGY2WhTYpPnrIDTdsKH5",
+          "IKne3meq5aSn9XLyUdCD",
+          "JBFqnCBsd6RMkjVDRZzb",
+          "N2lVS1w4EtoT3dr4eOWO",
+          "SAz9YHcvj6GT2YYXdXww",
+          "TX3LPaxmHKxFdv7VOQHJ",
+          "XB0fDUnXU5powFXDhCwa",
+          "Xb7hH8MSUJpSbSDYk0k2",
+          "XrExE9yKIg1WjnnlVkGX",
+          "bIHbv24MWmeRgasZH58o",
+          "cgSgspJ2msm6clMCkdW9",
+          "cjVigY5qzO86Huf0OWal",
+          "iP95p4xoKVk53GoZ742B",
+          "nPczCjzI2devNBz1zQrb",
+          "onwK4e9ZLuTAKqWW03F9",
+          "pFZP5JQG7iQjIQuC4Bku",
+          "pqHfZKP75CvOlQylNhV4",
+        ]
