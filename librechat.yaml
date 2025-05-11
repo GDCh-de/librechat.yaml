@@ -32,6 +32,7 @@ endpoints:
       models:
         default:
           [
+            "mistral-medium-2505",
             "mistral-small-latest",
             "mistral-large-latest",
             "codestral-latest",
@@ -39,7 +40,7 @@ endpoints:
           ]
         fetch: false
       titleConvo: true
-      titleModel: "mistral-small-latest"
+      titleModel: "mistral-medium-2505"
       modelDisplayLabel: "Mistral"
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
   agents:
