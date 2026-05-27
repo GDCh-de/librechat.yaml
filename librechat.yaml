@@ -1,4 +1,4 @@
-version: 1.3.6
+version: 1.3.11
 
 cache: true
 
@@ -13,10 +13,8 @@ endpoints:
         default:
           ["sonar-reasoning-pro", "sonar-reasoning", "sonar-pro", "sonar"]
         fetch: false
-        titleConvo: true
+      titleConvo: true
       titleModel: "sonar"
-      summarize: false
-      summaryModel: "sonar"
       dropParams: ["stop", "frequency_penalty"]
       modelDisplayLabel: "Perplexity"
     - name: "Mistral"
