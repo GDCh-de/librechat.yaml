@@ -87,7 +87,7 @@ interface:
 mcpServers:
   gdch-strapi-mcp:
     title: "GDCh Strapi MCP"
-    description: "MCP is a tool that allows the AI to interact with the GDCh Strapi Content Management System."
+    description: "Chat with Strapi Data"
     type: streamable-http
     url: https://content.gdch.app/mcp
     headers:
