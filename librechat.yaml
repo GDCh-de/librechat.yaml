@@ -83,15 +83,14 @@ balance:
 interface:
   marketplace:
     use: true
-
-mcpServers:
-  gdch-strapi-mcp:
-    title: "GDCh Strapi MCP"
-    description: "Chat with Strapi Data"
-    type: streamable-http
-    url: https://content.gdch.app/mcp
-    headers:
-      Authorization: "Bearer ${GDCH_STRAPI_ADMIN_TOKEN}"
-      "Content-Type": "application/json"
-      "Accept": "application/json, text/event-stream"
-    timeout: 30000
+# mcpServers:
+#   gdch-strapi-mcp:
+#     title: "GDCh Strapi MCP"
+#     description: "Chat with Strapi Data"
+#     type: streamable-http
+#     url: https://content.gdch.app/mcp
+#     headers:
+#       Authorization: "Bearer ${GDCH_STRAPI_ADMIN_TOKEN}"
+#       "Content-Type": "application/json"
+#       "Accept": "application/json, text/event-stream"
+#     timeout: 30000
