@@ -95,6 +95,7 @@ modelSpecs:
   list:
     - name: gpt-5-responses
       label: ChatGPT 5
+      group: openAI
       preset:
         endpoint: openAI
         model: gpt-5.6
