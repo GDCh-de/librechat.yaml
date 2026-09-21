@@ -11,7 +11,7 @@ endpoints:
       baseURL: "https://api.perplexity.ai/"
       models:
         default:
-          ["sonar-reasoning-pro", "sonar-reasoning", "sonar-pro", "sonar"]
+          ["sonar", "sonar-pro", "sonar-reasoning-pro", "sonar-deep-research"]
         fetch: false
       titleConvo: true
       titleModel: "sonar"
@@ -23,7 +23,7 @@ endpoints:
       models:
         default:
           [
-            "mistral-medium-2505",
+            "mistral-medium-latest",
             "mistral-small-latest",
             "mistral-large-latest",
             "codestral-latest",
@@ -31,7 +31,7 @@ endpoints:
           ]
         fetch: false
       titleConvo: true
-      titleModel: "mistral-medium-2505"
+      titleModel: "mistral-large-latest"
       modelDisplayLabel: "Mistral"
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
   agents:
@@ -46,10 +46,6 @@ speech:
       apiKey: "${OPENAI_STT_API_KEY}"
       model: "whisper-1"
   tts:
-    #    openai:
-    #      apiKey: "${OPENAI_TTS_API_KEY}"
-    #      model: "tts-1"
-    #      voices: ["alloy", "echo", "fable", "onyx", "nova", "shimmer"]
     elevenlabs:
       apiKey: "${ELEVENLABS_TTS_API_KEY}"
       model: "eleven_multilingual_v2"
@@ -98,15 +94,16 @@ modelSpecs:
   prioritize: false
   list:
     - name: gpt-5-responses
-      label: GPT-5 (Responses API)
+      label: ChatGPT 5
       preset:
         endpoint: openAI
         model: gpt-5
         useResponsesApi: true
-    - name: gpt-6-astra-responses
-      label: GPT-6 Astra (Responses API)
+    - name: everyday-sonnet
+      label: Claude Sonnet 5
+      group: anthropic
       preset:
-        endpoint: openAI
-        model: gpt-6-astra
-        useResponsesApi: true
-        reasoning_effort: medium
+        endpoint: anthropic
+        model: claude-sonnet-5
+        modelLabel: Claude Sonnet 5
+        promptCache: true
