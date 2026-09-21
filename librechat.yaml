@@ -93,20 +93,3 @@ interface:
     autoDisableAfterFailures: 5
     fireConcurrency: 5
     requireProject: true
-
-modelSpecs:
-  prioritize: false
-  list:
-    - name: gpt-5-responses
-      label: GPT-5 (Responses API)
-      preset:
-        endpoint: openAI
-        model: gpt-5
-        useResponsesApi: true
-    - name: gpt-6-astra-responses
-      label: GPT-6 Astra (Responses API)
-      preset:
-        endpoint: openAI
-        model: gpt-6-astra
-        useResponsesApi: true
-        reasoning_effort: medium
