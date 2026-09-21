@@ -81,6 +81,7 @@ balance:
   enabled: false
 
 interface:
+  modelSelect: true
   marketplace:
     use: true
   schedules:
@@ -93,6 +94,7 @@ interface:
     requireProject: true
 
 modelSpecs:
+  prioritize: false
   list:
     - name: gpt-5-responses
       label: GPT-5 (Responses API)
