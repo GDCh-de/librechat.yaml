@@ -97,7 +97,7 @@ modelSpecs:
       label: ChatGPT 5
       preset:
         endpoint: openAI
-        model: gpt-5
+        model: gpt-5.6
         useResponsesApi: true
     - name: everyday-sonnet
       label: Claude Sonnet 5
