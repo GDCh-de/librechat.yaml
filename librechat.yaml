@@ -1,4 +1,4 @@
-version: 1.3.11
+version: 1.3.15
 
 cache: true
 
@@ -83,14 +83,27 @@ balance:
 interface:
   marketplace:
     use: true
-# mcpServers:
-#   gdch-strapi-mcp:
-#     title: "GDCh Strapi MCP"
-#     description: "Chat with Strapi Data"
-#     type: streamable-http
-#     url: https://content.gdch.app/mcp
-#     headers:
-#       Authorization: "Bearer ${GDCH_STRAPI_ADMIN_TOKEN}"
-#       "Content-Type": "application/json"
-#       "Accept": "application/json, text/event-stream"
-#     timeout: 30000
+  schedules:
+    use: true
+    create: true
+    maxPerUser: 10
+    minIntervalMinutes: 60
+    autoDisableAfterFailures: 5
+    fireConcurrency: 5
+    requireProject: true
+
+modelSpecs:
+  list:
+    - name: gpt-5-responses
+      label: GPT-5 (Responses API)
+      preset:
+        endpoint: openAI
+        model: gpt-5
+        useResponsesApi: true
+    - name: gpt-6-astra-responses
+      label: GPT-6 Astra (Responses API)
+      preset:
+        endpoint: openAI
+        model: gpt-6-astra
+        useResponsesApi: true
+        reasoning_effort: medium
