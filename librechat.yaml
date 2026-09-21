@@ -82,6 +82,7 @@ balance:
 
 interface:
   modelSelect: true
+  parameters: true
   marketplace:
     use: true
   schedules:
