@@ -100,13 +100,6 @@ modelSpecs:
         endpoint: openAI
         model: gpt-6.1-sol
         useResponsesApi: true
-    - name: gpt-test
-      label: ChatGPT 6.1 Sol+
-      group: openAI
-      preset:
-        endpoint: openAI
-        model: gpt-6.1-sol
-        useResponsesApi: true
     - name: claude-standard
       label: Claude Sonnet 5.5
       group: anthropic
