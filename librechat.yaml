@@ -101,10 +101,16 @@ modelSpecs:
         model: gpt-6-sol
         useResponsesApi: true
     - name: claude-standard
-      label: Claude Sonnet 5
+      label: Claude Sonnet 5.5
       group: anthropic
       preset:
         endpoint: anthropic
         model: claude-sonnet-5-5
         modelLabel: Claude Sonnet 5.5
         promptCache: true
+    - name: gemini-standard
+      label: Gemini 3.8 Flash
+      group: google
+      preset:
+        endpoint: google
+        model: gemini-3.8-flash
