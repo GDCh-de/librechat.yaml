@@ -106,5 +106,5 @@ modelSpecs:
       preset:
         endpoint: anthropic
         model: claude-sonnet-5-5
-        modelLabel: Claude Sonnet 5
+        modelLabel: Claude Sonnet 5.5
         promptCache: true
