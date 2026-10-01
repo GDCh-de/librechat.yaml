@@ -94,11 +94,11 @@ modelSpecs:
   prioritize: false
   list:
     - name: gpt-standard
-      label: ChatGPT 6 Sol
+      label: ChatGPT 6.1 Sol
       group: openAI
       preset:
         endpoint: openAI
-        model: gpt-6-sol
+        model: gpt-6.1-sol
         useResponsesApi: true
     - name: claude-standard
       label: Claude Sonnet 5.5
