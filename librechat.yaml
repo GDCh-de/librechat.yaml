@@ -4,6 +4,7 @@ cache: true
 
 registration:
   socialLogins: ["openid"]
+
 endpoints:
   custom:
     - name: "Perplexity"
@@ -114,3 +115,13 @@ modelSpecs:
       preset:
         endpoint: google
         model: gemini-3.8-flash
+
+fileConfig:
+  endpoints:
+    agents:
+      fileLimit: 30
+      fileSizeLimit: 10
+      totalSizeLimit: 100
+      supportedMimeTypes:
+        - text/markdown
+        - text/plain
