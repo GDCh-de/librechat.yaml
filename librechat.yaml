@@ -24,6 +24,7 @@ endpoints:
       models:
         default:
           [
+            "mistral-large-4",
             "mistral-medium-latest",
             "mistral-small-latest",
             "mistral-large-latest",
@@ -32,7 +33,7 @@ endpoints:
           ]
         fetch: false
       titleConvo: true
-      titleModel: "mistral-large-latest"
+      titleModel: "mistral-large-4"
       modelDisplayLabel: "Mistral"
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
     - name: "Cortecs"
