@@ -35,7 +35,7 @@ endpoints:
       titleModel: "mistral-large-latest"
       modelDisplayLabel: "Mistral"
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
-    - name: "Cortecs "
+    - name: "Cortecs"
       apiKey: "${CORTECS_API_KEY}"
       baseURL: "https://api.cortecs.ai/v1"
       models:
