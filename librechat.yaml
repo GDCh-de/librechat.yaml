@@ -41,7 +41,7 @@ endpoints:
       baseURL: "https://api.cortecs.ai/v1"
       models:
         default: ["mistral-large-4"]
-        fetch: true
+        fetch: false
       titleConvo: true
       titleModel: "mistral-large-4"
       modelDisplayLabel: "Cortecs"
