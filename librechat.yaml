@@ -45,6 +45,7 @@ endpoints:
       titleConvo: true
       titleModel: "mistral-large-4"
       modelDisplayLabel: "Cortecs"
+      iconURL: "https://cortecs.ai/favicon.ico"
   agents:
     recursionLimit: 30
     disableBuilder: false
