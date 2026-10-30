@@ -35,6 +35,15 @@ endpoints:
       titleModel: "mistral-large-latest"
       modelDisplayLabel: "Mistral"
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
+    - name: "Cortecs "
+      apiKey: "${CORTECS_API_KEY}"
+      baseURL: "https://api.cortecs.ai/v1"
+      models:
+        default: ["mistral-large-4"]
+        fetch: true
+      titleConvo: true
+      titleModel: "mistral-large-4"
+      modelDisplayLabel: "Cortecs"
   agents:
     recursionLimit: 30
     disableBuilder: false
