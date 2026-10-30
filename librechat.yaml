@@ -40,10 +40,10 @@ endpoints:
       apiKey: "${CORTECS_API_KEY}"
       baseURL: "https://api.cortecs.ai/v1"
       models:
-        default: ["mistral-large-4"]
+        default: ["mistral-large-4-0"]
         fetch: false
       titleConvo: true
-      titleModel: "mistral-large-4"
+      titleModel: "mistral-large-4-0"
       modelDisplayLabel: "Cortecs"
       iconURL: "https://cortecs.ai/favicon.ico"
   agents:
